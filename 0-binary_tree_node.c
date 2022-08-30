@@ -1,5 +1,14 @@
 #include "binary_trees.h"
 
+/**
+ * binary_tree_node - Entry point
+ *
+ * @parent: upper node of tree
+ * @value: data stored inside node
+ *
+ * Return: New node created
+ */
+
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 {
 	binary_tree_t *new_node = NULL;
