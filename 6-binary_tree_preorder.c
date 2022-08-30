@@ -9,7 +9,7 @@
 void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int))
 {
 	/* If the tree doesn't exist nothing happen */
-	if (!tree)
+	if (!tree || !func)
 		return;
 	/* Pointer to a function to call each node */
 	func(tree->n);
