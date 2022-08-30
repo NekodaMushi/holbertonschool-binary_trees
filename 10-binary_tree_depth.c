@@ -11,7 +11,7 @@ size_t binary_tree_depth(const binary_tree_t *tree)
 {
 	/* Recursive approcah! Stop when tree is null */
 	if (tree == NULL)
-		return (-1);
+		return (0);
 	/* If not the depth will be calulated */
 	if (tree->parent)
 		return (binary_tree_depth(tree->parent) + 1);
