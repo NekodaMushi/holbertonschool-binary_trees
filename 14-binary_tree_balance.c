@@ -35,10 +35,12 @@ size_t binary_tree_height(const binary_tree_t *tree)
 
 int binary_tree_balance(const binary_tree_t *tree)
 {
-	/* Recursive approach, stops if trees don't exist anymore */
-	/* Returns + 2 if the tree is balance */
-	if (tree)
-		return (binary_tree_balance(tree->left) - binary_tree_balance(tree->right));
-	/* Return -1 if the tree is imbalance */
-	return (-1);
+	int height_l, height_r;
+
+	if (!tree)
+		return (0);
+
+	height_l = tree->left ? (int)binary_tree_height(tree->left) : -1;
+	height_r = tree->right ? (int)binary_tree_height(tree->right) : -1;
+	return (height_l - height_r);
 }
