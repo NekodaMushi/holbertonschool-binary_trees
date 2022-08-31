@@ -5,6 +5,7 @@
  * a binary tree using in-order traversal
  *
  * @tree: tree checked to navigate
+ * @func: Pointer on function
  *
  * Return: Nothing
  */
