@@ -15,6 +15,8 @@ int binary_tree_balance(const binary_tree_t *tree)
 	/* Returns + 2 if the tree is balance */
 	if (binary_tree_balance(tree->left) && binary_tree_balance(tree->right))
 		return (+2);
+	else if (!tree->left && !tree->right)
+		return (0);
 	/* Return -1 if the tree is imbalance */
 	return (-1);
 }
