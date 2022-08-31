@@ -1,9 +1,11 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree_depth - Function that mesure
- * the depth of a node in a binary tree
+ * binary_tree_size - Function that mesure
+ * the number of element of a tree
+ *
  * @tree: is a pinter that piont to the root of a binary tree
+ *
  * Return: the depth of nodes
  */
 
