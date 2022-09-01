@@ -49,18 +49,21 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 {
 	binary_tree_t *left, *right;
 
-	left = tree->left;
-	right = tree->right;
 	/* Recursive approach and it's stop when tree is NULL */
 	if (!tree)
 		return (0);
+
+	left = tree->left;
+	right = tree->right;
 	/* Check if the node is a leaf */
 	if (binary_tree_is_leaf(tree))
 		return (1);
 	/* Height mesures the height of a tree check if the tree is perfect */
 	if (binary_tree_height(left) == binary_tree_height(right))
+	{
 		if (binary_tree_is_perfect(left) && binary_tree_is_perfect(right))
 			return (1);
+	}
 	/* Returns 0 if the tree is not perfect */
 	return (0);
 }
