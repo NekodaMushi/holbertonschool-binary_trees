@@ -1,3 +1,5 @@
+
+
 #include "binary_trees.h"
 
 /**
@@ -10,13 +12,11 @@
  * Return: (1) if tree is full , (0) otherwise.
  */
 
+/**Once recursion occurs second will = to back_to_start */
 binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tree_t *second)
 {
 	/**Pointer keeping the initial pos of second, not affected by recursion*/
 	const binary_tree_t *back_to_start = second;
-
-	/**Pointer to reatribute second at the start after each iteration*/
-	second = back_to_start;
 
 	if (first == NULL || second == NULL)
 		return (NULL);
