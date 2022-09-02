@@ -26,7 +26,6 @@ size_t binary_tree_height(const binary_tree_t *tree)
 		return (Left_Path);
 }
 
-
 /**
  * binary_tree_balance - Function that mesure balance of factor
  * @tree: is the pointer that point to the root of the tree
