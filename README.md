@@ -1,3 +1,6 @@
+
+![Binary_Tree](https://github.com/NekodaMushi/holbertonschool-binary_trees/assets/98282927/67be6b70-5f92-4433-ae54-12b59fafb7d5)
+
 <div class="MP_4XU1NY5Zu10QiZHzZ"><div class="
       m9qHEqW419vul78Ks_N4
       XuMz9evrxSSYQmNEht5_
